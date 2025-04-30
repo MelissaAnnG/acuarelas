@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.inventory,
+.prices {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.handleorders,
+.loadsale,
+.settings,
+.sign-up, 
+.modify, 
+.unregister {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /*3rem=24px*/
+}
+
+.handleorders,
+.loadsale,
+.settings, 
+.sign-up,
+.modify,
+.unregister{ 
+    background-image: url('/src/assets/images/Fondo1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #1a1818;
+    font-size: 100px;
+}
+
+header{
+    position: sticky;
+        top: 0;
+        z-index: 999
+}

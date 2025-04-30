@@ -1,0 +1,201 @@
+.hero-container{
+    background: url('/src/assets/images/Fondo1.png') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hero-container > h1{
+    color: #1a1818;
+    font-size: 110px;
+    margin-top: -140px;
+    text-align: center;
+}
+
+.hero-container > p{
+    color: #1a1818;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.enlaces a:link,
+.enlaces a:visited {
+    color: #1a1818;
+    text-decoration: none;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: nowrap;  /* No permita el ajuste de los elementos */    
+}
+
+.image-container {
+    margin-right: 60px; /* Espacio entre la imagen y los enlaces */
+}
+
+.image-container img {
+    max-width: 100%;    /* La imagen puede reducir su tamaño hasta un máximo del 100% de su contenedor */
+    height: auto;
+    width: 600px;
+}
+
+.enlaces {
+    margin-top: 4px;
+    flex-grow: 1;
+}
+
+.enlaces ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+    list-style: none;
+}
+
+.enlaces li {
+    margin-bottom: 16px;
+    font-size: 44px;    
+    transition: transform 0.5s;
+}
+
+.enlaces li:hover {
+    transform: scale(1.2);
+}
+
+.inventory a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #e04f5f;
+
+}
+
+.prices a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #32bea6;
+}
+
+.load-sale a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #25b6d2;
+}
+
+.handle-orders a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #f2b851;
+}
+
+@media screen and (max-width: 1066px) {    
+    .content-container {
+        flex-direction: row;
+    }
+
+    .image-container {
+        margin: 0 0 20px 0;
+    }
+
+    .image-container img {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .hero-container > h1{
+        font-size: 76px;
+        margin-top: -150px;
+    }
+
+    .hero-container > p {
+        font-size: 5vw;
+    }
+
+    .enlaces li {
+        margin: 5px 0;
+    }
+    
+    .enlaces a h1 {
+        font-size: 64px;
+    }
+    
+    .image-container {
+        margin: 0 0 20px 0;
+    }
+    
+    .image-container img {
+        width: 400px;   
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .hero-container > h1{
+        font-size: 56px;
+        margin-top: -100px;
+    }
+
+    .hero-container > p{
+        font-size: 30px;
+    }
+
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        margin: 0 0 20px 0;
+    }
+
+    .image-container img {
+        width: 300px;
+    }
+
+    .enlaces ul {
+        align-items: center;
+    }
+
+    .enlaces li {
+        margin: 5px 0;
+        text-align: center; /* Asegura que los textos estén centrados */
+    }
+
+    .enlaces a h1 {
+        font-size: 52px;
+        text-align: center; /* Asegura que los textos estén centrados */
+    }
+
+    .btn-mobile{
+        display: block;
+        text-decoration: none;
+    }
+
+    .btn{
+        width: 100%;
+    }
+}

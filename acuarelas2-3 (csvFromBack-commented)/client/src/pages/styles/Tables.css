@@ -1,0 +1,75 @@
+table {
+    margin-inline: auto;
+    margin-top: 5px;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+
+th {
+    font-size: 24px;
+    font-weight: bold;
+    padding-inline: 20px;
+}
+
+table thead tr {
+    background-color: black;
+    color: white;
+} 
+
+tr {
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #D6EEEE;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;    
+}
+
+.pagination .page-link:hover {
+    background-color: #eee;
+}
+
+.pagination .page-item {
+    margin: 0 4px;    /* espacio entre los números de página */
+}
+
+.pagination .page-link {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    padding: 10px 15px;    /* incrementar el relleno interno */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.pagination .active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.pagination .disabled .page-link {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.pagination .page-item:first-child .page-link {
+    margin-left: 0;
+}
+
+.pagination .page-item:last-child .page-link {
+    margin-right: 0;
+}
